@@ -1,0 +1,53 @@
+#site-header{
+	padding: 0px;
+	margin: 0px;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	height: 90px;
+}
+#site-header > div{
+	padding: 0px 20px;
+	margin: 0px;
+}
+#site-header a{
+	text-decoration: none;
+	
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 20px;
+}
+#site-header p{
+	margin-top: 40px;
+	margin-bottom: 0px;
+	padding: 0px;
+	font-family: script, "Brush Script MT", "Brush Script Std";
+	font-size: 25px;
+}
+#site-header .logo{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	overflow: hidden;
+}
+#site-header .logo h1{
+	margin: 0px;
+	font-family: "Agency FB";
+	font-size: 40px;
+	color: #00adef;
+}
+#site-header .logo img{
+	height: 60px;
+	width: auto;
+}
+
+
+@media screen and (max-width: 720px){
+	#site-header{
+		justify-content: center;
+	}
+	#site-header .slogan{
+		display: none;
+	}
+}

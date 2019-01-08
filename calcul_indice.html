@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Calcul d'indice</title>
+		<meta name="theme-color" content="#00adef" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link rel="stylesheet" type="text/css" href="site-header.css" />
+		<link rel="stylesheet" type="text/css" href="nav.css" />
+		<link rel="stylesheet" type="text/css" href="sous-nav.css" />
+		<link rel="stylesheet" type="text/css" href="site-footer.css" />
+		<link rel="stylesheet" type="text/css" href="calcul_indice.css" />
+		<script src="calcul_indice.js"></script>
+	</head>
+	
+	<body>
+		<div class="page-wrap">
+		<header id="site-header">
+			<div class="logo">
+				<!--a href="index.html"><img src="images/logo.png" alt="AlternatifIT logo" /></a-->
+				<a href="index.html"><h1>AlternatifIT</h1></a>
+			</div>
+			<div class="slogan"><p>Vos <b>données</b>, votre <b>liberté</b>.</p></div>
+		</header>
+		<nav id="menu">
+			<label for="menu-mobile" class="menu-mobile">Menu</label>
+			<input type="checkbox" id="menu-mobile" role="button" />
+			<ul>
+				<li class="menu-choix"><a href="index.html">Accueil</a></li>
+				<li class="menu-choix"><a href="rien_a_cache.html">Rien à cacher ?</a></li>
+				<li class="menu-choix"><a href="services.html">Services</a>
+					<ul class="submenu">
+						<li><a href="services/maps.html">Cartographie en ligne</a></li>
+						<li><a href="services/chats.html">Chats</a></li>
+						<li><a href="services/clouds.html">Clouds</a></li>
+						<li><a href="services/hebergeur_video.html">Hébergeurs vidéo</a></li>
+						<li><a href="services/mail.html">Mails</a></li>
+						<li><a href="services/moteur_recherche.html">Moteurs de recherches</a></li>
+						<li><a href="services/navigateurs.html">Navigateurs web</a></li>
+						<li><a href="services/reseau_sociaux.html">Réseaux sociaux</a></li>
+						<li><a href="services/suite_bureautique.html">Suite bureautique</a></li>
+						<li><a href="services/os.html">Système d’exploitation</a></li>
+						<li><a href="services/os_mobile.html">Système d’exploitation mobile</a></li>
+						<li><a href="services/traducteur.html">Traduction en ligne</a></li>
+						<li><a href="services/video-conference.html">Vidéo-conférence</a></li>
+						<li><a href="services/framaquoi.html">FramaQuoi?</a></li>
+					</ul>
+				</li>
+				<li class="menu-choix"><a href="calcul_indice.html">Indice de liberté</a></li>
+			</ul>
+		</nav>
+		
+		<!--div id="premiere_image">
+			<a href=""><img src="" alt="" /></a>
+		</div-->
+		
+		<main>
+			<!--nav id="sous-nav">
+			</nav-->
+			<section>
+				<header>
+					<h2>Calculez-votre <i>indice de liberté</i> :</h2>
+					<p>Parmis les services ci-dessous, lequels utilisez-vous?</p>
+					<p class="rmq">Cette page nécessite l'utilisation de JavaScript pour fonctionner.<p>
+				</header>
+			
+				<article>
+					<form name="qcm" id="qcm">
+						<div class="questionnaire">
+							<div class="service">
+								<h3>Cartographies en ligne</h3>
+								<input type=checkbox name="choix" id="google_map" value=-5 /><label for="google_map">Google Map</label>
+								<br /><input type=checkbox name="choix" id="osm" value=5 /><label for="osm">OpenStreetMap</label>
+								<br /><input type=checkbox name="choix" id="base_osm" value=5 /><label for="base_osm">Basé sur OpenStreetMap</label>
+								<br /><input type=checkbox name="choix" id="default_map" value=0 /><label for="default_map">Aucun / autre</label>
+							</div>
+							<div class="service">
+								<h3>Chats</h3>
+								<input type=checkbox name="choix" id="messenger" value=-5 /><label for="messenger">Messenger</label>
+								<br /><input type=checkbox name="choix" id="skype" value=-5 /><label for="skype">Skype</label>
+								<br /><input type=checkbox name="choix" id="discord" value=0 /><label for="discord">Discord</label>
+								<br /><input type=checkbox name="choix" id="whatsapp" value=-5 /><label for="whatsapp">WhatsApp</label>
+								<br /><input type=checkbox name="choix" id="slack" value=0 /><label for="slack">Slack</label>
+								<br /><input type=checkbox name="choix" id="hangouts" value=-5 /><label for="hangouts">Google Hangouts</label>
+								<br /><input type=checkbox name="choix" id="telegram" value=2 /><label for="telegram">Telegram</label>
+								<br /><input type=checkbox name="choix" id="mumble" value=2 /><label for="mumble">Mumble</label>
+								<br /><input type=checkbox name="choix" id="cryptocat" value=7 /><label for="cryptocat">Cryptocat</label>
+								<br /><input type=checkbox name="choix" id="tor_messenger" value=10 /><label for="tor_messenger">Tor Messenger</label>
+								<br /><input type=checkbox name="choix" id="chat_mutli1" value=5 /><label for="chat_mutli1">Kontalk / Riot.im / Tox</label>
+								<br /><input type=checkbox name="choix" id="chat_mutli2" value=5 /><label for="chat_mutli2">Jitsi / Ring</label>
+								<br /><input type=checkbox name="choix" id="default_chat" value=0 /><label for="default_chat">Aucun / autre</label>
+							</div>
+							<div class="service">
+								<h3>Clouds</h3>
+								<input type=checkbox name="choix" id="google_drive" value=-5 /><label for="google_drive">Google Drive</label>
+								<br /><input type=checkbox name="choix" id="ms_onedrive" value=-5 /><label for="ms_onedrive">Microsoft OneDrive</label>
+								<br /><input type=checkbox name="choix" id="hubic" value=2 /><label for="hubic">Hubic</label>
+								<br /><input type=checkbox name="choix" id="mega" value=5 /><label for="mega">Mega</label>
+								<br /><input type=checkbox name="choix" id="cozy" value=5 /><label for="cozy">Cozy Cloud</label>
+								<br /><input type=checkbox name="choix" id="sia" value=7 /><label for="sia">Sia</label>
+								<br /><input type=checkbox name="choix" id="orc" value=10 /><label for="orc">orc.network</label>
+								<br /><input type=checkbox name="choix" id="autoheb_cloud" value=10 /><label for="autoheb_cloud">Auto-hébergement</label>
+								<br /><input type=checkbox name="choix" id="default_cloud" value=0 /><label for="default_cloud">Aucun / autre</label>
+							</div>
+							<div class="service">
+								<h3>Hébergements vidéo</h3>
+								<input type=checkbox name="choix" id="youtube" value=-5 /><label for="youtube">YouTube</label>
+								<br /><input type=checkbox name="choix" id="dailymotion" value=-2 /><label for="dailymotion">Dailymotion</label>
+								<br /><input type=checkbox name="choix" id="vimeo" value=0 /><label for="vimeo">Vimeo</label>
+								<br /><input type=checkbox name="choix" id="peertube" value=5 /><label for="peertube">PeerTube</label>
+								<br /><input type=checkbox name="choix" id="default_video" value=0 /><label for="default_video">Aucun / autre</label>
+							</div>
+							<div class="service">
+								<h3>Mails</h3>
+								<input type=checkbox name="choix" id="gmail" value=-5 /><label for="gmail">Gmail</label>
+								<br /><input type=checkbox name="choix" id="ms_outlook" value=-5 /><label for="ms_outlook">Microsoft OutLook</label>
+								<br /><input type=checkbox name="choix" id="protonmail" value=7 /><label for="protonmail">ProtonMail</label>
+								<br /><input type=checkbox name="choix" id="tutanota" value=5 /><label for="tutanota">Tutanota</label>
+								<br /><input type=checkbox name="choix" id="autoheb_mail" value=10 /><label for="autoheb_mail">Auto-hébergement</label>
+								<br /><input type=checkbox name="choix" id="default_mail" value=0 /><label for="default_mail">Aucun / autre</label>
+							</div>
+							<div class="service">
+								<h3>Moteurs de recherches</h3>
+								<input type=checkbox name="choix" id="google" value=-5 /><label for="google">Google</label>
+								<br /><input type=checkbox name="choix" id="bing" value=-5 /><label for="bing">Bing</label>
+								<br /><input type=checkbox name="choix" id="yahoo" value=-5 /><label for="yahoo">Yahoo!</label>
+								<br /><input type=checkbox name="choix" id="ask" value=-5 /><label for="ask">Ask.com</label>
+								<br /><input type=checkbox name="choix" id="qwant" value=5 /><label for="qwant">Qwant</label>
+								<br /><input type=checkbox name="choix" id="duckduckgo" value=2 /><label for="duckduckgo">DuckDuckGo</label>
+								<br /><input type=checkbox name="choix" id="ecosia-lilo" value=5 /><label for="ecosia-lilo">Ecosia / Lilo</label>
+								<br /><input type=checkbox name="choix" id="disconnect" value=2 /><label for="disconnect">Disconnect</label>
+								<br /><input type=checkbox name="choix" id="searx" value=2 /><label for="searx">SearX / Auto-hébergement</label>
+								<br /><input type=checkbox name="choix" id="default_search_engine" value=0 /><label for="default_search_engine">Aucun / autre</label>
+							</div>
+							<div class="service">
+								<h3>Navigateurs web</h3>
+								<input type=checkbox name="choix" id="chrome" value=-5 /><label for="chrome">Google Chrome</label>
+								<br /><input type=checkbox name="choix" id="edge" value=-5 /><label for="edge">Edge</label>
+								<br /><input type=checkbox name="choix" id="ie" value=-10 /><label for="ie">Internet Explorer</label>
+								<br /><input type=checkbox name="choix" id="firefox" value=5 /><label for="firefox">Mozilla Firefox</label>
+								<br /><input type=checkbox name="choix" id="opera" value=-2 /><label for="opera">Opera</label>
+								<br /><input type=checkbox name="choix" id="chromium" value=2 /><label for="chromium">Chromium</label>
+								<br /><input type=checkbox name="choix" id="tor_browser" value=10 /><label for="tor_browser">Tor Browser</label>
+								<br /><input type=checkbox name="choix" id="vivaldi" value=2 /><label for="vivaldi">Vivaldi</label>
+								<br /><input type=checkbox name="choix" id="brave" value=5 /><label for="brave">Brave</label>
+								<br /><input type=checkbox name="choix" id="epic-iridium" value=7 /><label for="epic-iridium">Epic browser / Iridium</label>
+								<br /><input type=checkbox name="choix" id="default_browser" value=0 /><label for="default_browser">Aucun / autre</label>
+							</div>
+							<div class="service">
+								<h3>Réseaux sociaux</h3>
+								<input type=checkbox name="choix" id="facebook" value=-5 /><label for="facebook">Facebook</label>
+								<br /><input type=checkbox name="choix" id="twitter" value=-7 /><label for="twitter">Twitter</label>
+								<br /><input type=checkbox name="choix" id="instagram" value=-5 /><label for="instagram">Instagram</label>
+								<br /><input type=checkbox name="choix" id="snapchat" value=-7 /><label for="snapchat">Snapchat</label>
+								<br /><input type=checkbox name="choix" id="google_plus" value=-5 /><label for="google_plus">Google Plus</label>
+								<br /><input type=checkbox name="choix" id="linkedin" value=-5 /><label for="linkedin">Linkedin</label>
+								<br /><input type=checkbox name="choix" id="friendica" value=5 /><label for="friendica">Friendica</label>
+								<br /><input type=checkbox name="choix" id="diaspora" value=5 /><label for="diaspora">Diaspora*</label>
+								<br /><input type=checkbox name="choix" id="mastodon" value=5 /><label for="mastodon">Mastodon</label>
+								<br /><input type=checkbox name="choix" id="movim" value=5 /><label for="movim">Movim</label>
+								<br /><input type=checkbox name="choix" id="minds" value=5 /><label for="minds">Minds</label>
+								<br /><input type=checkbox name="choix" id="steemit" value=2 /><label for="steemit">Steemit</label>
+								<br /><input type=checkbox name="choix" id="autoheb_sociaux" value=5 /><label for="autoheb_sociaux">Héberge une ou plusieurs instances</label>
+								<br /><input type=checkbox name="choix" id="default_sociaux" value=0 /><label for="default_sociaux">Aucun / autre</label>
+							</div>
+							<div class="service">
+								<h3>Suite bureautique</h3>
+								<input type=checkbox name="choix" id="ms_office" value=-5 /><label for="ms_office">Microsoft Office</label>
+								<br /><input type=checkbox name="choix" id="google_doc" value=-5 /><label for="google_doc">Google Docs</label>
+								<br /><input type=checkbox name="choix" id="libreoffice" value=5 /><label for="libreoffice">LibreOffice</label>
+								<br /><input type=checkbox name="choix" id="openoffice" value=5 /><label for="openoffice">OpenOffice</label>
+								<br /><input type=checkbox name="choix" id="default_office" value=0 /><label for="default_office">Aucun / autre</label>
+							</div>
+							<div class="service">
+								<h3>Système d’exploitation</h3>
+								<input type=checkbox name="choix" id="windows" value=-5 /><label for="windows">Windows</label>
+								<br /><input type=checkbox name="choix" id="macosx" value=0 /><label for="macosx">Mac OSX</label>
+								<br /><input type=checkbox name="choix" id="chromeos" value=-5 /><label for="chromeos">ChromeOS</label>
+								<br /><input type=checkbox name="choix" id="tails-whonix" value=10 /><label for="tails-whonix">Tails / Whonix</label>
+								<br /><input type=checkbox name="choix" id="linux" value=5 /><label for="linux">Autre distribution Linux</label>
+								<br /><input type=checkbox name="choix" id="reactos" value=5 /><label for="reactos">ReactOS</label>
+								<br /><input type=checkbox name="choix" id="qubesos" value=10 /><label for="qubesos">Qubes OS</label>
+								<br /><input type=checkbox name="choix" id="default_os" value=0 /><label for="default_os">Aucun / autre</label>
+							</div>
+							<div class="service">
+								<h3>Système d’exploitation mobile</h3>
+								<input type=checkbox name="choix" id="android" value=-5 /><label for="android">Android</label>
+								<br /><input type=checkbox name="choix" id="ios" value=-5 /><label for="ios">iOS</label>
+								<br /><input type=checkbox name="choix" id="windows_phone" value=-5 /><label for="windows_phone">Windows Phone</label>
+								<br /><input type=checkbox name="choix" id="rom_custom" value=5 /><label for="rom_custom">Rom custom</label>
+								<br /><input type=checkbox name="choix" id="default_os_mobile" value=0 /><label for="default_os_mobile">Aucun / autre</label>
+							</div>
+							<div class="service">
+								<h3>Traduction en ligne</h3>
+								<input type=checkbox name="choix" id="google_traduction" value=-5 /><label for="google_traduction">Google traduction</label>
+								<br /><input type=checkbox name="choix" id="deepl" value=0 /><label for="deepl">Deepl</label>
+								<br /><input type=checkbox name="choix" id="wordreference" value=0 /><label for="wordreference">WordReference</label>
+								<br /><input type=checkbox name="choix" id="linguee" value=0 /><label for="linguee">Linguee</label>
+								<br /><input type=checkbox name="choix" id="default_trad" value=0 /><label for="default_trad">Aucun / autre</label>
+							</div>
+						</div>
+						
+						<div class="boutons">
+							<br /><input type=button name="bouton" value="Envoyer" onclick="afficher(test(choix, 4))" class="bouton" />
+							<input type="reset" value="Vider" class="bouton" />
+							<h2 id="score"></h2>
+						</div>
+					</form>
+					
+				</article>
+			</section>
+		</main>
+		</div>
+		
+		<footer id="site-footer">
+			<p><a href="mailto:" title="Not available">M. Goubau</a> et <a href="mailto:" title="Not available">M. Lemaitre</a>, 2017-2018, no right reserved</p>
+		</footer>
+	</body>
+</html>

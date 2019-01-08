@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>AlternatifIT</title>
+		<meta name="theme-color" content="#00adef" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link rel="stylesheet" type="text/css" href="site-header.css" />
+		<link rel="stylesheet" type="text/css" href="nav.css" />
+		<link rel="stylesheet" type="text/css" href="sous-nav.css" />
+		<link rel="stylesheet" type="text/css" href="site-footer.css" />
+	</head>
+	
+	<body>
+		<div class="page-wrap">
+		<header id="site-header">
+			<div class="logo">
+				<!--a href="index.html"><img src="images/logo.png" alt="AlternatifIT logo" /></a-->
+				<a href="index.html"><h1>AlternatifIT</h1></a>
+			</div>
+			<div class="slogan"><p>Vos <b>données</b>, votre <b>liberté</b>.</p></div>
+		</header>
+		<nav id="menu">
+			<label for="menu-mobile" class="menu-mobile">Menu</label>
+			<input type="checkbox" id="menu-mobile" role="button" />
+			<ul>
+				<li class="menu-choix"><a href="index.html">Accueil</a></li>
+				<li class="menu-choix"><a href="rien_a_cache.html">Rien à cacher ?</a></li>
+				<li class="menu-choix"><a href="services.html">Services</a>
+					<ul class="submenu">
+						<li><a href="services/maps.html">Cartographie en ligne</a></li>
+						<li><a href="services/chats.html">Chats</a></li>
+						<li><a href="services/clouds.html">Clouds</a></li>
+						<li><a href="services/hebergeur_video.html">Hébergeur vidéo</a></li>
+						<li><a href="services/mail.html">Mails</a></li>
+						<li><a href="services/moteur_recherche.html">Moteurs de recherches</a></li>
+						<li><a href="services/navigateurs.html">Navigateurs web</a></li>
+						<li><a href="services/reseau_sociaux.html">Réseaux sociaux</a></li>
+						<li><a href="services/suite_bureautique.html">Suite bureautique</a></li>
+						<li><a href="services/os.html">Système d’exploitation</a></li>
+						<li><a href="services/os_mobile.html">Système d’exploitation mobile</a></li>
+						<li><a href="services/traducteur.html">Traduction en ligne</a></li>
+						<li><a href="services/video-conference.html">Vidéo-conférence</a></li>
+						<li><a href="services/framaquoi.html">FramaQuoi?</a></li>
+					</ul>
+				</li>
+				<li class="menu-choix"><a href="calcul_indice.html">Indice de liberté</a></li>
+			</ul>
+		</nav>
+		
+		<div id="premiere_image">
+			<a href="images/data.jpg"><img src="images/data.jpg" alt="données dans le cloud" /></a>
+		</div>
+		
+		<main>
+			<!--nav id="sous-nav">
+			</nav-->
+			<section>
+				<header>
+					<h2>Bienvenue</h2>
+				</header>
+			
+				<article>
+					<p>Nous utilisons de plus en plus de services en ligne ou de logiciels qui nous semblent gratuits. Pourtant, pas un mois ne passe sans qu'un scandale éclate autour du <a href="#big_data">big data<sup> (1)</sup></a>. Vous savez, ces <a href="#zettaoctects">zettaoctects<sup> (2)</sup></a> de petites données, qui prisent individuellement, sont inoffensives. Pourtant, analysées ensemble, elles permettent de faire et de savoir beaucoup de choses. Encore récemment, l'affaire <a href="#cambridge_analytica">Cambridge Analytic<sup> (3)</sup></a> en est une preuve. Avez-vous déjà téléchargé et farfouillé les archives de données proposées par certaines entreprises, telles que <a href="https://www.facebook.com/help/212802592074644" target="_blank">Facebook</a> et <a href="https://support.google.com/accounts/answer/3024190?hl=fr" target="_blank">Google</a> ? Vous pourriez être étonné des informations qu'ils conservent.</p>
+					<p><q>Mais ce n'est pas grave, je n'ai rien à cacher !</q> répondront certains. Nous n'en sommes pas si sûr et nous vous conseillons d'aller lire notre article sur le sujet. Vous le trouverez en suivant ce <a href="rien_a_cache.html">lien</a>. Peut-être pensez-vous utiliser des services de confiance et être à l'abri. Pourquoi ne feriez-vous pas le test en suivant cet autre <a href="calcul_indice.html">lien</a>?</p>
+					<p>Il est temps de reprendre le contrôle de nos données. Pour cela, il n'y a pas trente-six mille solutions, il faut changer nos habitudes et utiliser des logiciels et services respectueux de notre vie privée. Ils sont parfois moins connus mais ils existent. Nous vous proposons une liste de quelques services de bases que nous avons sélectionnés pour vous. Vous la retrouverez <a href="services.html">ici</a>. N'hésitez cependant pas à faire vos proches recherches. Vous savez ce que l'on dit, <q>Google est votre ami</q>.</p>
+				</article>
+				
+				<div id="ressources">
+					<br /><hr />
+					<h3>Notes et liens externes :</h3>
+					<p>Si certaines notions vous échappent, voici quelques liens qui pourraient vous aider :</p>				
+					<ul>
+						<li id="big_data" ><p>(1) <a href="https://www.dailymotion.com/video/x2bahqq" target=_blank title="dailymotion.com"><i>Big data : données, données, donnez-moi ! - #DATAGUEULE 15</i> sur dailymotion</a></p></li>
+						<li id="zettaoctects"><p>(2) Le zettaoctects (Zo) est un multiple de l'octet. Il représente 10<sup> 21</sup> octets, soit 1 000 000 000 000 000 000 000 octets.</p></li>
+						<li id="cambridge_analytica"><p>(3) <a href="https://www.youtube.com/watch?v=DPU2Ge7EeAs" target=_blank title="youtube.com"><i>#DeleteFacebook</i> de Léo Duff sur Youtube</a></p></li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		</div>
+		
+		<footer id="site-footer">
+			<p><a href="mailto:" title="Not available">M. Goubau</a> et <a href="mailto:" title="Not available">M. Lemaitre</a>, 2017-2018, no right reserved</p>
+		</footer>
+	</body>
+</html>

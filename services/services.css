@@ -1,0 +1,16 @@
+.open-source{
+	color: limegreen;
+}
+main h3 a:link{
+	color: inherit;
+}
+main h3 a:visited{
+	color: inherit;
+}
+main h3 a:hover{
+	color: inherit;
+}
+main h3 a:active{
+	color: inherit;
+	font-weight: bolder;
+}
