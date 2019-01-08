@@ -9,7 +9,7 @@ Ce project rentre dans le cadre du cursus de *sécurité des systèmes* de la ha
 
  ### Futur du projet
  Le projet est n'actuellement plus mis à jour. Cependant, quelques améliorations ont été pensé.
- - Améliorer la mise en page de la page « Indice de liberté ».
+ - Améliorer la mise en page de la page « [Indice de liberté](calcul_indice.html) ».
  - Ajouter un logo et des favicons.
  - Mettre en place des balises *meta description*.
  - Ajouter des phrases comiques en fonction de l'indice obtenu.
