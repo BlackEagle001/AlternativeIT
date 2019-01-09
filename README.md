@@ -25,3 +25,5 @@ Voici une liste des logiciels qui ont été utilisé pour la réalisation de se 
  - Notepad++
  - W3c validator
  
+### Crédits
+Ce projet a été réalisé en partenariat avec une autre personne.
